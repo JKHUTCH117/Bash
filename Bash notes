@@ -20,4 +20,24 @@ find -iname is case insensitive
 find -type will allow you to find certain data types (files, directories, etc.)
 find -empty will find empty files
 find -executable will find executable files
+find ./ -iname "*.txt" -printf "%inode %file\n"
+find ./ -type d <---- finds anything within local directory that is a directory
+find ./ -type d -exec ls -l {} \;
+touch ./find/{1..10}.txt
+touch ./find/{empty,test,stuff}.txt
+find ./find/ ! -name *.txt
+cat /etc/passwd | egrep /home/
+cat /etc/passwd | egrep ":[0-9]{5}:"
+cat /etc/passwd | egrep -n home
+cat /etc/passwd | egrep /bash -A2 or -B2 (A = after, B = before)
+echo "test" ; echo "next";
+test
+next
+> sends input to a file
+echo "test" > file.test
+this will overwrite everything in the file.
+>> appends to a file
+find /* 2>/dev/null | grep "Permission denied"
+find /* 1>/dev/null > debug.log
+find /* 1>/dev/null 2> debug.log
 
