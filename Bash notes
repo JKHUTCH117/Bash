@@ -1,0 +1,23 @@
+curl allows you to go out to the internet and grab a url
+curl cheat.sh/grep <---- grabs everything to do with grep from cheat.sh. Done within terminal.
+history shows command history
+!! will rerun last command
+!<number> will execute the command associated with that number within history
+touch creates a file
+ls allows you to view files within a directory
+file shows what type of file
+rm removes files
+rmdir removes directories
+touch -t sets time and date of a file. YYYYMMDDTT:TT <---format for touch -t
+.bashrc allows you to run scripts/aliases everytime a new terminal is opened
+mv allows you to move a file to a new directory
+ln -s <file> <filepointer> will create a symbolic link from the "filepointer" spot to the "file" spot
+ln <file> <filepointer> creates a hardlink from the "filespointer" to the "file". Hardlinks will not be deleted if the actual file is deleted.
+Symbolic links will no longer work if origianl file is deleted.
+whereis shows filepaths for commands
+find -name will find anything with the designated name given by the user
+find -iname is case insensitive 
+find -type will allow you to find certain data types (files, directories, etc.)
+find -empty will find empty files
+find -executable will find executable files
+
